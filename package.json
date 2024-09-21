@@ -2,9 +2,9 @@
   "name": "peter-s-app-opener",
   "displayName": "Peter's App Opener",
   "description": "opening common applications for easy switching between    VSCode/Cursor and  other  apps",
-  "version": "0.0.1",
+  "version": "1.2.4",
   "engines": {
-    "vscode": "^1.93.0"
+    "vscode": "^1.91.0"
   },
   "categories": [
     "Other"
@@ -13,11 +13,399 @@
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "peter-s-app-opener.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    {
+      "command": "peter-s-app-opener.open_datagrip",
+      "title": "Open datagrip"
+    },
+    {
+      "command": "peter-s-app-opener.open_appcode",
+      "title": "Open appcode"
+    },
+    {
+      "command": "peter-s-app-opener.open_mps",
+      "title": "Open mps"
+    },
+    {
+      "command": "peter-s-app-opener.open_dataspell",
+      "title": "Open dataspell"
+    },
+    {
+      "command": "peter-s-app-opener.open_clion",
+      "title": "Open clion"
+    },
+    {
+      "command": "peter-s-app-opener.open_webstorm",
+      "title": "Open webstorm"
+    },
+    {
+      "command": "peter-s-app-opener.open_phpstorm",
+      "title": "Open phpstorm"
+    },
+    {
+      "command": "peter-s-app-opener.open_studio",
+      "title": "Open studio"
+    },
+    {
+      "command": "peter-s-app-opener.open_aqua",
+      "title": "Open aqua"
+    },
+    {
+      "command": "peter-s-app-opener.open_rubymine",
+      "title": "Open rubymine"
+    },
+    {
+      "command": "peter-s-app-opener.open_goland",
+      "title": "Open goland"
+    },
+    {
+      "command": "peter-s-app-opener.open_fleet",
+      "title": "Open fleet"
+    },
+    {
+      "command": "peter-s-app-opener.open_space",
+      "title": "Open space"
+    },
+    {
+      "command": "peter-s-app-opener.open_pycharm",
+      "title": "Open pycharm"
+    },
+    {
+      "command": "peter-s-app-opener.open_gateway",
+      "title": "Open gateway"
+    },
+    {
+      "command": "peter-s-app-opener.open_idea",
+      "title": "Open idea"
+    },
+    {
+      "command": "peter-s-app-opener.open_Visual_Studio_Code",
+      "title": "Open Visual Studio Code"
+    },
+    {
+      "command": "peter-s-app-opener.open_VLC",
+      "title": "Open VLC"
+    },
+    {
+      "command": "peter-s-app-opener.open_Astrill",
+      "title": "Open Astrill"
+    },
+    {
+      "command": "peter-s-app-opener.open_Notes",
+      "title": "Open Notes"
+    },
+    {
+      "command": "peter-s-app-opener.open_Preview",
+      "title": "Open Preview"
+    },
+    {
+      "command": "peter-s-app-opener.open_Mail",
+      "title": "Open Mail"
+    },
+    {
+      "command": "peter-s-app-opener.open_Dictionary",
+      "title": "Open Dictionary"
+    },
+    {
+      "command": "peter-s-app-opener.open_Contacts",
+      "title": "Open Contacts"
+    },
+    {
+      "command": "peter-s-app-opener.open_Time_Machine",
+      "title": "Open Time Machine"
+    },
+    {
+      "command": "peter-s-app-opener.open_FaceTime",
+      "title": "Open FaceTime"
+    },
+    {
+      "command": "peter-s-app-opener.open_Stickies",
+      "title": "Open Stickies"
+    },
+    {
+      "command": "peter-s-app-opener.open_Photos",
+      "title": "Open Photos"
+    },
+    {
+      "command": "peter-s-app-opener.open_Messages",
+      "title": "Open Messages"
+    },
+    {
+      "command": "peter-s-app-opener.open_Calculator",
+      "title": "Open Calculator"
+    },
+    {
+      "command": "peter-s-app-opener.open_VoiceMemos",
+      "title": "Open VoiceMemos"
+    },
+    {
+      "command": "peter-s-app-opener.open_Launchpad",
+      "title": "Open Launchpad"
+    },
+    {
+      "command": "peter-s-app-opener.open_Reminders",
+      "title": "Open Reminders"
+    },
+    {
+      "command": "peter-s-app-opener.open_App_Store",
+      "title": "Open App Store"
+    },
+    {
+      "command": "peter-s-app-opener.open_Clock",
+      "title": "Open Clock"
+    },
+    {
+      "command": "peter-s-app-opener.open_Automator",
+      "title": "Open Automator"
+    },
+    {
+      "command": "peter-s-app-opener.open_Calendar",
+      "title": "Open Calendar"
+    },
+    {
+      "command": "peter-s-app-opener.open_Visual_Studio_Code",
+      "title": "Open Visual Studio Code"
+    },
+    {
+      "command": "peter-s-app-opener.open_VLC",
+      "title": "Open VLC"
+    },
+    {
+      "command": "peter-s-app-opener.open_Astrill",
+      "title": "Open Astrill"
+    },
+    {
+      "command": "peter-s-app-opener.open_Sourcetree",
+      "title": "Open Sourcetree"
+    },
+    {
+      "command": "peter-s-app-opener.open_Xmind",
+      "title": "Open Xmind"
+    },
+    {
+      "command": "peter-s-app-opener.open_CleanMyMac_X",
+      "title": "Open CleanMyMac X"
+    },
+    {
+      "command": "peter-s-app-opener.open_MindManager",
+      "title": "Open MindManager"
+    },
+    {
+      "command": "peter-s-app-opener.open_Figma",
+      "title": "Open Figma"
+    },
+    {
+      "command": "peter-s-app-opener.open_Google_Chrome",
+      "title": "Open Google Chrome"
+    },
+    {
+      "command": "peter-s-app-opener.open_Karabiner-Elements",
+      "title": "Open Karabiner-Elements"
+    },
+    {
+      "command": "peter-s-app-opener.open_Karabiner-EventViewer",
+      "title": "Open Karabiner-EventViewer"
+    },
+    {
+      "command": "peter-s-app-opener.open_Numbers",
+      "title": "Open Numbers"
+    },
+    {
+      "command": "peter-s-app-opener.open_Eclipse_Java",
+      "title": "Open Eclipse Java"
+    },
+    {
+      "command": "peter-s-app-opener.open_IINA",
+      "title": "Open IINA"
+    },
+    {
+      "command": "peter-s-app-opener.open_Xcode",
+      "title": "Open Xcode"
+    },
+    {
+      "command": "peter-s-app-opener.open_iTerm2",
+      "title": "Open iTerm2"
+    },
+    {
+      "command": "peter-s-app-opener.open_Cursor",
+      "title": "Open Cursor"
+    },
+    {
+      "command": "peter-s-app-opener.open_XLPlayer",
+      "title": "Open XLPlayer"
+    },
+    {
+      "command": "peter-s-app-opener.open_Microsoft_Word",
+      "title": "Open Microsoft Word"
+    },
+    {
+      "command": "peter-s-app-opener.open_Time_Out",
+      "title": "Open Time Out"
+    },
+    {
+      "command": "peter-s-app-opener.open_Brightness_Sync",
+      "title": "Open Brightness Sync"
+    },
+    {
+      "command": "peter-s-app-opener.open_OmniFocus",
+      "title": "Open OmniFocus"
+    },
+    {
+      "command": "peter-s-app-opener.open_Commander_One",
+      "title": "Open Commander One"
+    },
+    {
+      "command": "peter-s-app-opener.open_Google_Chrome_Canary",
+      "title": "Open Google Chrome Canary"
+    },
+    {
+      "command": "peter-s-app-opener.open_Obsidian",
+      "title": "Open Obsidian"
+    },
+    {
+      "command": "peter-s-app-opener.open_Safari",
+      "title": "Open Safari"
+    },
+    {
+      "command": "peter-s-app-opener.open_Microsoft_Excel",
+      "title": "Open Microsoft Excel"
+    },
+    {
+      "command": "peter-s-app-opener.open_zoom.us",
+      "title": "Open zoom.us"
+    },
+    {
+      "command": "peter-s-app-opener.open_WeChat",
+      "title": "Open WeChat"
+    },
+    {
+      "command": "peter-s-app-opener.open_FeiShu",
+      "title": "Open FeiShu"
+    },
+    {
+      "command": "peter-s-app-opener.open_Keynote",
+      "title": "Open Keynote"
+    },
+    {
+      "command": "peter-s-app-opener.open_Fork",
+      "title": "Open Fork"
+    },
+    {
+      "command": "peter-s-app-opener.open_Pages",
+      "title": "Open Pages"
+    },
+    {
+      "command": "peter-s-app-opener.open_OmniGraffle",
+      "title": "Open OmniGraffle"
+    },
+    {
+      "command": "peter-s-app-opener.open_Insomnia",
+      "title": "Open Insomnia"
+    },
+    {
+      "command": "peter-s-app-opener.open_Lunar",
+      "title": "Open Lunar"
+    },
+    {
+      "command": "peter-s-app-opener.open_IHMC_CmapTools",
+      "title": "Open IHMC CmapTools"
+    },
+    {
+      "command": "peter-s-app-opener.open_Flow",
+      "title": "Open Flow"
+    },
+    {
+      "command": "peter-s-app-opener.open_Microsoft_Remote_Desktop_Beta",
+      "title": "Open Microsoft Remote Desktop Beta"
+    },
+    {
+      "command": "peter-s-app-opener.open_Fluor",
+      "title": "Open Fluor"
+    },
+    {
+      "command": "peter-s-app-opener.open_VideoFusion-macOS",
+      "title": "Open VideoFusion-macOS"
+    },
+    {
+      "command": "peter-s-app-opener.open_Microsoft_Edge",
+      "title": "Open Microsoft Edge"
+    },
+    {
+      "command": "peter-s-app-opener.open_The_Unarchiver",
+      "title": "Open The Unarchiver"
+    },
+    {
+      "command": "peter-s-app-opener.open_Microsoft_OneNote",
+      "title": "Open Microsoft OneNote"
+    },
+    {
+      "command": "peter-s-app-opener.open_MySQLWorkbench",
+      "title": "Open MySQLWorkbench"
+    },
+    {
+      "command": "peter-s-app-opener.open_QQLive",
+      "title": "Open QQLive"
+    },
+    {
+      "command": "peter-s-app-opener.open_Browserosaurus",
+      "title": "Open Browserosaurus"
+    },
+    {
+      "command": "peter-s-app-opener.open_Internet_Translator_Pro",
+      "title": "Open Internet Translator Pro"
+    },
+    {
+      "command": "peter-s-app-opener.open_kdiff3",
+      "title": "Open kdiff3"
+    },
+    {
+      "command": "peter-s-app-opener.open_Chromium",
+      "title": "Open Chromium"
+    },
+    {
+      "command": "peter-s-app-opener.open_Alfred_5",
+      "title": "Open Alfred 5"
+    },
+    {
+      "command": "peter-s-app-opener.open_Developer",
+      "title": "Open Developer"
+    },
+    {
+      "command": "peter-s-app-opener.open_Firefox",
+      "title": "Open Firefox"
+    },
+    {
+      "command": "peter-s-app-opener.open_Notability",
+      "title": "Open Notability"
+    },
+    {
+      "command": "peter-s-app-opener.open_SceneBuilder",
+      "title": "Open SceneBuilder"
+    },
+    {
+      "command": "peter-s-app-opener.open_Postman",
+      "title": "Open Postman"
+    },
+    {
+      "command": "peter-s-app-opener.open_JetBrains_Toolbox",
+      "title": "Open JetBrains Toolbox"
+    },
+    {
+      "command": "peter-s-app-opener.open_Microsoft_PowerPoint",
+      "title": "Open Microsoft PowerPoint"
+    },
+    {
+      "command": "peter-s-app-opener.open_QQ",
+      "title": "Open QQ"
+    },
+    {
+      "command": "peter-s-app-opener.open_Sublime_Text",
+      "title": "Open Sublime Text"
+    },
+    {
+      "command": "peter-s-app-opener.open_TextMate",
+      "title": "Open TextMate"
+    }
+  ]
   },
   "repository": "https://github.com/time4Wiley/peter-s-app-opener",
   "scripts": {
@@ -32,19 +420,21 @@
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "check-types": "tsc --noEmit",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "build:install": "rm *.vsix && vsce package && cursor --install-extension *.vsix"
   },
   "devDependencies": {
-    "@types/vscode": "^1.93.0",
-    "@types/mocha": "^10.0.7",
+    "@types/mocha": "^10.0.8",
     "@types/node": "20.x",
+    "@types/vscode": "^1.91.0",
     "@typescript-eslint/eslint-plugin": "^8.3.0",
     "@typescript-eslint/parser": "^8.3.0",
-    "eslint": "^9.9.1",
-    "esbuild": "^0.23.1",
-    "npm-run-all": "^4.1.5",
-    "typescript": "^5.5.4",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "esbuild": "^0.23.1",
+    "eslint": "^9.9.1",
+    "mocha": "^10.7.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.5.4"
   }
 }
