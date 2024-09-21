@@ -2,7 +2,7 @@
   "name": "peter-s-app-opener",
   "displayName": "Peter's App Opener",
   "description": "opening common applications for easy switching between    VSCode/Cursor and  other  apps",
-  "version": "1.2.4",
+  "version": "1.3.4",
   "engines": {
     "vscode": "^1.91.0"
   },

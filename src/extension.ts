@@ -138,7 +138,9 @@ export function activate(context: vscode.ExtensionContext) {
 				if (appPath.endsWith('.app')) {
 					command = `open '${appPath}'`;
 				} else if (appPath.startsWith('/usr')) {
-					command = `"${appPath}"`;
+					const workspaceFolders = vscode.workspace.workspaceFolders;
+					const rootPath = workspaceFolders && workspaceFolders.length > 0 ? workspaceFolders[0].uri.fsPath : '';
+					command = `"${appPath}" "${rootPath}"`;
 				}
 			} else if (platform === 'win32') {
 				command = `"${appPath}"`;
